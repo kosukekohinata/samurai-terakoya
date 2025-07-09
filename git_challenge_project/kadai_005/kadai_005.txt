@@ -1,0 +1,68 @@
+PS C:\Users\kosuk\samurai-terakoya> cd C:\Users\kosuk
+PS C:\Users\kosuk> mkdir git_challenge_project
+
+
+    ディレクトリ: C:\Users\kosuk
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/07/09     22:44                git_challenge_project
+
+
+PS C:\Users\kosuk> cd git_challenge_project
+PS C:\Users\kosuk\git_challenge_project> git init git_challenge
+Initialized empty Git repository in C:/Users/kosuk/git_challenge_project/git_challenge/.git/
+PS C:\Users\kosuk\git_challenge_project> cd git_challenge
+PS C:\Users\kosuk\git_challenge_project\git_challenge> New-Item hello_world.txt -ItemType File
+
+
+    ディレクトリ: C:\Users\kosuk\git_challenge_project\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/07/09     22:45              0 hello_world.txt
+
+
+PS C:\Users\kosuk\git_challenge_project\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git add hello_world.txt
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git commit -m "Add initial greeting"
+[main (root-commit) 26ba398] Add initial greeting
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\kosuk\git_challenge_project\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git add hello_world.txt
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git commit -m "Add Japanese greeting"
+[main 5cb05f0] Add Japanese greeting
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git log hello_world.txt
+commit 5cb05f03942b141047820ca55b731361a96170d8 (HEAD -> main)
+Author: kosukekohinata <kosukekohinata@gmail.com>
+Date:   Wed Jul 9 22:54:26 2025 +0900
+
+    Add Japanese greeting
+
+commit 26ba398988c4fed4ac804af773ab18c36b35e8cc
+Author: kosukekohinata <kosukekohinata@gmail.com>
+Date:   Wed Jul 9 22:46:39 2025 +0900
+
+    Add initial greeting
+PS C:\Users\kosuk\git_challenge_project\git_challenge> git log --oneline
+5cb05f0 (HEAD -> main) Add Japanese greeting
+26ba398 Add initial greeting
+PS C:\Users\kosuk\git_challenge_project\git_challenge> cd ..
+PS C:\Users\kosuk\git_challenge_project> mkdir kadai_005
+
+
+    ディレクトリ: C:\Users\kosuk\git_challenge_project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/07/09     22:59                kadai_005
+
+
+PS C:\Users\kosuk\git_challenge_project> cd kadai_005
+PS C:\Users\kosuk\git_challenge_project\kadai_005> code kadai_005.txt
+PS C:\Users\kosuk\git_challenge_project\kadai_005> 
